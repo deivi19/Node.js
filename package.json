@@ -1,8 +1,8 @@
 {
-"name": "flowAry",
+"name": "flowDeivi",
 "version": "1.0.0",
 "type": "module",
-"description": "Primera aplicacion ary Flow",
+"description": "Primera aplicacion deivi Flow",
 "scripts": {
 "start": "node src/app.js",
 "test": "node test/app.test.js"

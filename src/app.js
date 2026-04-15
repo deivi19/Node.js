@@ -1,20 +1,19 @@
 export function saludar(nombre){
-return "Hola" + nombre + ", bienvenido a aplicacion de Ary";
+return "Hola" + nombre + ", bienvenido a aplicacion de Deivi";
 }
 export function despedir(nombre){
-return "Hasta pronto," + nombre + "!Ary";
+return "Hasta pronto," + nombre + "!Deivi";
 }
 
 export function estadoSistema(){
 return {
 estado: "activo",
 version: "1.0.0",
-message: "Sistema Ary funcionando correctamente"
+message: "Sistema Deivi funcionando correctamente"
 }; 
 }
 
 export function sumar(a ,b){
-
 return  a+b ;
 }
 

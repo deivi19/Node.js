@@ -5,7 +5,7 @@ let fallidas=0;
 
 const r1= saludar("Ary")
 if (r1.includes("Ary")) {
-console.log ("Test 1 pasado: funcion saludar en Ary es correcta")
+console.log ("Test 1 pasado: funcion saludar en Deivi es correcta")
 pasadas++;
 }else {
 console.log("Test 1 Fallido: ", r1)
@@ -13,10 +13,10 @@ fallidas++;
 }
 const actualEstado= estadoSistema();
 if (actualEstado.estado === "activo"){
-console.log ("Test 2 Pasado: estadoSistema() funciona en Ary ");
+console.log ("Test 2 Pasado: estadoSistema() funciona en Deivi ");
 pasadas++;
 }else{
-console.log("Test 2 Fallido: ", estado, "en Ary");
+console.log("Test 2 Fallido: ", estado, "en Deivi");
 fallidas++;
 }
 
