@@ -29,6 +29,15 @@ if (health.status==="ok"){
     fallidas++;
 }
 
+const rFact = calcularFactorial(5);
+if (rFact === 120) {
+    console.log("✅ Test Factorial pasado: el cálculo de 5 es correcto (120)");
+    pasadas++;
+} else {
+    console.log("❌ Test Factorial fallido: se esperaba 120, pero se obtuvo ", rFact);
+    fallidas++;
+}
+
 console.log ("\nResultados: " + pasadas + "pasadas, " + fallidas + "fallidas");
 if (fallidas>0) process.exit(1);
 }
