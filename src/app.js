@@ -29,3 +29,8 @@ servicio: "StreamFlow API",
 version: "1.0.0"
    }; 
 }
+
+export function calcularFactorial(n) {
+    
+    return null;
+}

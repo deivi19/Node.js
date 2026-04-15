@@ -1,4 +1,4 @@
-import {saludar, despedir, estadoSistema,healthcheck} from "../src/app.js"
+import {saludar, despedir, estadoSistema,healthcheck, calcularFactorial} from "../src/app.js"
 function ejecutarPruebas(){
 let pasadas=0;
 let fallidas=0;
@@ -26,6 +26,15 @@ if (health.status==="ok"){
     pasadas++;
 }else{
     console.log("Test HealthCheck fallido", health);
+    fallidas++;
+}
+
+const rFact = calcularFactorial(5);
+if (rFact === 120) {
+    console.log("✅ Test Factorial pasado: el cálculo de 5 es correcto (120)");
+    pasadas++;
+} else {
+    console.log("❌ Test Factorial fallido: se esperaba 120, pero se obtuvo ", rFact);
     fallidas++;
 }
 
