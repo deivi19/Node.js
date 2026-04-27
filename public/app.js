@@ -1,11 +1,11 @@
 const VERSION = "1.2.0";
 
-function saludar(nombre){
-    return "Hola ${nombre}, bienvenido DeiviFlow";
+function saludar(nombre) {
+    return `Hola ${nombre}, bienvenido DeiviFlow`;
 }
 
-function healthCheck(){
-    return{
+function healthCheck() {
+    return {
         status: "ok",
         version: VERSION,
         timestamp: new Date().toISOString(),
@@ -13,13 +13,19 @@ function healthCheck(){
     };
 }
 
-function verificarSistema(){
-const resultado = healthCheck();
-const statusDiv = document.getElementById("status");
-statusDiv.textContent = '${resultado.message} | ${resultado.timestamp}';
-statusDiv.style.color = "#009B4C";
+function verificarSistema() {
+    const resultado = healthCheck();
+    const statusDiv = document.getElementById("status");
+    if (statusDiv) {
+        statusDiv.textContent = `${resultado.message} | ${resultado.timestamp}`;
+        statusDiv.style.color = "#009B4C";
+    }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('version').textContent = 'v${VERSION}';
+    const versionSpan = document.getElementById('version');
+    if (versionSpan) {
+        versionSpan.textContent = `v${VERSION}`;
+    }
     verificarSistema();
 });
